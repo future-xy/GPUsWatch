@@ -1,2 +1,1 @@
-# GPUsWatch
-The GPU's Watch
+# The GPU's Watch
