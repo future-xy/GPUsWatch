@@ -1,0 +1,15 @@
+[Unit]
+Description=WanDB Background Monitoring Service
+After=network.target
+
+[Service]
+Type=simple
+User=yao
+WorkingDirectory=/home/yao/GPUsWatch
+ExecStart=/home/yao/opt/miniconda3/bin/python /home/yao/GPUsWatch/gpus_watch.py
+Restart=on-failure
+RestartSec=10
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
